@@ -16,7 +16,7 @@ channel.basic_publish(
     exchange = '',
     routing_key = 'task_queue',
     body = message,
-    properties=pika.BasicProperties(
+    properties = pika.BasicProperties(
          delivery_mode = 2, # make message persistent
     )
 )
